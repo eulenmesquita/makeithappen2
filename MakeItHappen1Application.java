@@ -4,6 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@EnableAutoConfiguration
+@EntityScan(basePackages = {"com.euclidesMakeithappen.models"})  // scan JPA entities
 public class MakeItHappen1Application {
 
 	public static void main(String[] args) {
